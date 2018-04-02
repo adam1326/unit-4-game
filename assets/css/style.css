@@ -1,0 +1,81 @@
+body {
+    background-image: url("milky.jpg");
+    background-size: 100%;
+
+
+}
+
+h1 {
+    text-align: center;
+    line-height: 50px;
+    color: white;
+    padding-top: 20px;
+    font-size: 31px;
+}
+
+h2, h3 {
+    color: white;
+}
+
+
+#tophead{
+    background-color: blue;
+    height: 100px;
+    width: 250px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+#instructions {
+    background-color: green;
+    height: 300px;
+    width: 450px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+#gem {
+    height: 150px;
+    width: 150px;
+    padding-left: 5px;
+}
+
+#random {
+    background-color: rgb(223, 13, 13);
+    height: 150px;
+    width: 200px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+#counter {
+    background-color: lightblue;
+    height: 150px;
+    width: 100px;
+    margin-top: -150px;
+    margin-left: 220px;
+}
+
+#crystals {
+    background-color: chocolate;
+    height: 155px;
+    width: 638px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+#totalscore {
+    background-color: rgb(172, 99, 160);
+    height: 20px;
+    width: 200px;
+    margin-top: -315px;
+    margin-left: 335px;
+}
+
+
+#score {
+    background-color: rgb(172, 99, 160);
+    height: 115px;
+    width: 200px;
+    margin-top: 15px;
+    margin-left: 335px;
+}
