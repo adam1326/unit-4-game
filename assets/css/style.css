@@ -1,9 +1,26 @@
 body {
     background-image: url("milky.jpg");
     background-size: 100%;
+    position: relative;
+    width: 100%;
+    border: 1px solid red;
+    
 
 
 }
+
+body > *  {
+    margin: auto;
+    width: 1000px;
+    border: 1px solid blue;
+    height: 750px;
+    overflow: auto;
+  }
+
+  body > script {
+    display: none
+  }
+
 
 h1 {
     text-align: center;
