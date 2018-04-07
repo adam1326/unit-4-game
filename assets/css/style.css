@@ -32,6 +32,14 @@ h1 {
 
 h2, h3 {
     color: white;
+    
+}
+
+#score {
+    color: white;
+    padding-top: 5px;
+    padding-left: 10px;
+    font-size: 64px;
 }
 
 
@@ -51,7 +59,7 @@ h2, h3 {
     margin-left: 10px;
 }
 
-#gem {
+.gem {
     height: 150px;
     width: 150px;
     padding-left: 5px;
@@ -60,9 +68,12 @@ h2, h3 {
 #random {
     background-color: rgb(223, 13, 13);
     height: 150px;
-    width: 200px;
+    width: 190px;
     margin-top: 10px;
     margin-left: 10px;
+    color: white;
+    font-size: 72px;
+    
 }
 #counter {
     background-color: lightblue;
