@@ -1,8 +1,8 @@
 //Start of Crystal game
 //Random number the user must meet
     $(document).ready(function(){
-    var Random=Math.floor(Math.random()*101+19)
-    $('#random').text(Random);
+    var random=Math.floor(Math.random()*120+19)
+    $('#random').text(random);
 
 //Random number for each crystal
 var num1= Math.floor(Math.random()*12+1)
@@ -15,15 +15,15 @@ var num4= Math.floor(Math.random()*12+1)
     var losses = 0;
     var random = 0;
     var yourNumber = 0;
-    var total = [];
-    $("wins").text(wins);
-    $("losses").text(losses)
+    var total = 0;
+    // $("wins").text(wins);
+    // $("losses").text(losses)
 
 // reset
  var reset = function(){
-        Random=Math.floor(Math.random()*101+19)
-        console.log(Random)
-        $('#random').text(Random);
+        random=Math.floor(Math.random()*120+19)
+        console.log(random)
+        $('#random').text(random);
         crystalRandom = [];
         total = 0;
         num1= Math.floor(Math.random()*12+1);
@@ -31,74 +31,88 @@ var num4= Math.floor(Math.random()*12+1)
         num3= Math.floor(Math.random()*12+1);
         num4= Math.floor(Math.random()*12+1);
         $("#score").text(total);
-    }
+        console.log(num1,num2,num3,num4);
+    } 
+   
 
 //win and losses
+
     function win(){
         wins++;
-        $("#wins").text(wins);
+        $(".wins").text(wins);
         reset();
     }
 
     function loss(){
         losses++;
-        $("#losses").text(losses);
+        $(".losses").text(losses);
         reset();
     }
+
 // Total Score
 $("#gem1").on("click", function(){   
-    total = +total + +num1;    
+    total = total + num1;    
     $('#score').text(total);	
 
-            if (score == random){
-                wins();
+            if (total == random){
+                $(".wins").text(wins);
+                win();
             }
-            else if ( score > random){
-                losses();
+            else if ( total > random){
+                $(".losses").text(losses);
+                loss();
             }
         })
     
 
 $('#gem2').on('click', function(){ 
-    total = +total + +num2;  
+    total = total + num2;  
     $('#score').text(total);	
 
 
-            if (score == random){
-                wins();
+            if (total == random){
+                $(".wins").text(wins);
+                win();
             }
-            else if ( score > random){
-                losses();
+            else if ( total > random){
+                $(".losses").text(losses);
+                loss();
             }
         })	
 
 
 $('#gem3').on('click', function(){
-    total = +total + +num3;
+    total = total + num3;
  
     $('#score').text(total);	
 
 
-            if (score == random){
-                wins();
+            if (total == random){
+                $(".wins").text(wins);
+                win();
             }
-            else if ( score > random){
-                losses();
+            else if ( total > random){
+                $(".losses").text(losses);
+                loss();
             }	
 
 })
 
 
     $('#gem4').on('click', function(){
-        total = +total + +num4;
+        total = total + num4;
 
         $('#score').text(total);	
 
-                if (score == random){
-                    wins();
+                if (total == random){
+                    $(".wins").text(wins);
+                    win();
                 }
-                else if ( score > random){
-                    losses();
+                else if ( total > random){
+                    $(".losses").text(losses);
+                    loss();
                 }	
             })	
  })
+
+

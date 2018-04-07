@@ -35,13 +35,6 @@ h2, h3 {
     
 }
 
-#score {
-    color: white;
-    padding-top: 5px;
-    padding-left: 10px;
-    font-size: 64px;
-}
-
 
 #tophead{
     background-color: blue;
@@ -77,10 +70,12 @@ h2, h3 {
 }
 #counter {
     background-color: lightblue;
-    height: 150px;
+    height: 145px;
     width: 100px;
     margin-top: -150px;
-    margin-left: 220px;
+    margin-left: 215px;
+    padding-left: 5px;
+    padding-top: 5px;
 }
 
 #crystals {
@@ -103,7 +98,11 @@ h2, h3 {
 #score {
     background-color: rgb(172, 99, 160);
     height: 115px;
-    width: 200px;
-    margin-top: 15px;
+    width: 191px;
+    margin-top: 10px;
     margin-left: 335px;
+    color: white;
+    padding-top: 0px;
+    padding-left: 10px;
+    font-size: 64px;
 }
