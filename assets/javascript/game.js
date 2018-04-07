@@ -16,11 +16,10 @@ var num4= Math.floor(Math.random()*12+1)
     var random = 0;
     var yourNumber = 0;
     var total = 0;
-    // $("wins").text(wins);
-    // $("losses").text(losses)
+
 
 // reset
- var reset = function(){
+ function reset(){
         random=Math.floor(Math.random()*120+19)
         console.log(random)
         $('#random').text(random);
